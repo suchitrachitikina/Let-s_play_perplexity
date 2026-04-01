@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Perplexity - Search</title>
+    <link rel='stylesheet' href='style.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+</head>
+<body>
+    <aside>
+        <div class='nav-group'>
+            <a href='#' class='nav-item active'><i class='fa-solid fa-magnifying-glass'></i> <span class='nav-text'>Search</span></a>
+            <a href='#' class='nav-item'><i class='fa-solid fa-desktop'></i> <span class='nav-text'>Computer</span></a>
+            <a href='#' class='nav-item'><i class='fa-solid fa-plus'></i> <span class='nav-text'>New thread</span></a>
+            <a href='#' class='nav-item'><i class='fa-solid fa-clock-rotate-left'></i> <span class='nav-text'>History</span></a>
+            <a href='#' class='nav-item'><i class='fa-solid fa-compass'></i> <span class='nav-text'>Discover</span></a>
+            <a href='#' class='nav-item'><i class='fa-solid fa-th-large'></i> <span class='nav-text'>Spaces</span></a>
+            <a href='#' class='nav-item'><i class='fa-solid fa-chart-line'></i> <span class='nav-text'>Finance</span></a>
+            <a href='#' class='nav-item'><i class='fa-solid fa-ellipsis'></i> <span class='nav-text'>More</span></a>
+        </div>
+        <div class='nav-footer'>
+            <a href='#' class='nav-item sign-in-btn'>
+                <i class='fa-solid fa-user-circle'></i> 
+                <span class='nav-text'>Sign In</span>
+                <i class='fa-solid fa-chevron-right arrow-right'></i>
+            </a>
+        </div>
+    </aside>
+
+    <main>
+        <div class='logo'>perplexity</div>
+
+        <div class='search-container'>
+            <div id='file-status' class='file-status' style='display: none;'>
+                <i class='fa-solid fa-file-pdf'></i> <span id='filename-display'>doc.pdf</span>
+                <i class='fa-solid fa-times close-btn' id='remove-file'></i>
+            </div>
+            <input type='text' class='search-input' placeholder='Type @ for connectors and sources'>
+            <div class='search-controls'>
+                <div class='left-controls'>
+                    <input type='file' id='file-input' accept='.pdf' style='display: none;'>
+                    <button class='circle-btn' id='upload-trigger'><i class='fa-solid fa-plus'></i></button>
+                    <button class='pill-btn'><i class='fa-solid fa-desktop'></i> Computer <i class='fa-solid fa-plus' style='font-size: 10px;'></i></button>
+                </div>
+                <div class='right-controls'>
+                    <button class='text-btn'>Gemini 2.5 Flash <i class='fa-solid fa-chevron-down'></i></button>
+                    <button class='icon-btn'><i class='fa-solid fa-microphone'></i></button>
+                    <button class='action-btn'><i class='fa-solid fa-arrow-up'></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class='suggestions-section'>
+            <div class='suggestions-header'>
+                <i class='fa-solid fa-desktop'></i> Try Computer
+            </div>
+            <div class='pills'>
+                <div class='pill active'>Organize my life</div>
+                <div class='pill'>Build a business</div>
+                <div class='pill'>Monitor the situation</div>
+                <div class='pill'>Create a p...</div>
+            </div>
+            <div class='suggestion-list'>
+                <div class='suggestion-item'>Prepare me for an upcoming meeting</div>
+                <div class='suggestion-item'>Redesign my schedule around priorities</div>
+                <div class='suggestion-item'>Plan a trip with full itinerary and bookings</div>
+                <div class='suggestion-item'>Sort my tasks and prioritize this week</div>
+                <div class='suggestion-item'>Create a budget tracker from my spending</div>
+            </div>
+        </div>
+    </main>
+    <script src='script.js'></script>
+</body>
+</html>
